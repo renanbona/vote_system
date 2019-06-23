@@ -5,5 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :campaigns
+  has_many :likes
   validates :name, presence: true
 end
