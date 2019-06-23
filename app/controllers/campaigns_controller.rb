@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CampaignsController < ApplicationController
   before_action :set_campaigns, only: [:show]
 
