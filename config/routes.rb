@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :campaigns, only: [:index, :show]
-  resources :like, only: [:show, :create, :update]
+  resources :likes, only: [:show, :create, :update]
 end
