@@ -2,14 +2,17 @@
   <%= link_to campaign do %>   
     <div class="card is-shady">
       <div class="card-image section">
-        <figure class="image is-3by3">
+        <figure class="image is-3by5">
           <%= image_tag campaign.image %>
         </figure>
       </div>
       <div class="card-content">
         <div class="content section">
-          <h4><%= campaign.title %> <%= (campaign.blocked ? "- Bloqueada" : "") %></h4>
-          <p><%= campaign.description %></p>
+          <div class="notification">
+            <h3 class="title is-size-4"><%= campaign.title %></h3>
+            <h4><%= (campaign.blocked ? "Votação finalizada" : "Votação aberta") %></h4>
+            <p><%= campaign.description %></p>
+          </div>
         </div>
       </div>
     </div>

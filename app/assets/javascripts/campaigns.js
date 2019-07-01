@@ -43,7 +43,7 @@ $(document).on('ready turbolinks:load', function(){
       var settings = {
           "async": true,
           "crossDomain": true,
-          "url": window.location.href.split("campaign")[0]+"like/"+campaign_id,
+          "url": window.location.href.split("campaign")[0]+"likes/"+campaign_id,
           "method": "GET",
           "headers": {
               "cache-control": "no-cache"
@@ -83,7 +83,7 @@ $(document).on('ready turbolinks:load', function(){
       var settings = {
           "async": true,
           "crossDomain": true,
-          "url": window.location.href.split("campaign")[0]+"like",
+          "url": window.location.href.split("campaign")[0]+"likes",
           "method": "POST",
           "headers": {
               "cache-control": "no-cache",
@@ -108,7 +108,7 @@ $(document).on('ready turbolinks:load', function(){
       var settings = {
           "async": true,
           "crossDomain": true,
-          "url": window.location.href.split("campaign")[0]+"like/"+like_id,
+          "url": window.location.href.split("campaign")[0]+"likes/"+like_id,
           "method": "PUT",
           "headers": {
               "cache-control": "no-cache",

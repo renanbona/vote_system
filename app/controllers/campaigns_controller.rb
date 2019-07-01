@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class CampaignsController < ApplicationController
-  before_action :set_campaigns, only: [:show]
+  before_action :set_campaign, only: [:show]
 
   def index
     @campaigns = Campaign.all
@@ -13,7 +13,7 @@ class CampaignsController < ApplicationController
 
   private
 
-  def set_campaigns
+  def set_campaign
     @campaign = Campaign.find(params[:id])
   end
 
