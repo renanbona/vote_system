@@ -3,17 +3,21 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-This project uses ruby 2.5.3
-
 * System dependencies
+
+This project uses ruby 2.6.5
 
 ## Configuration
 
-Just clone the project and run `bundle install`
+Clone the project and run `bundle install` and `yarn install`
 
 ## Database
 
-This project uses Postgres, so for starting this database run 
+This project uses Postgres so copy the database.yml and put your credentials  
+
+`cp config/database.yml.sample config/database.yml`
+
+then start the postgres database with the following  
 
 `pg_ctl start`
 
